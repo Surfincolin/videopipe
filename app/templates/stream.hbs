@@ -1,0 +1,51 @@
+{{!-- /templates/user.hbs
+ --}}
+<h1>Stream Details</h1>
+
+<table class="table">
+  <tr>
+    <td>
+      <strong>ID:</strong>
+    </td>
+    <td>
+      {{id}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Name:</strong>
+    </td>
+    <td>
+      {{name}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>rtmp:</strong>
+    </td>
+    <td>
+      {{rtmp}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>streamName:</strong>
+    </td>
+    <td>
+      {{streamName}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>description:</strong>
+    </td>
+    <td>
+      {{description}}
+    </td>
+  </tr>
+</table>
+
+<button type="button" class="btn btn-default" {{action "edit"}}>Edit</button>
+<button type="button" class="btn btn-danger" {{action "delete"}}>Delete</button>
+
+{{outlet}}

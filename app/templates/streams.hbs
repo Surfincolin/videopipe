@@ -1,0 +1,27 @@
+{{!-- /templates/streams.hbs
+ --}}
+<div class="container">
+<h1>Streams</h1>
+
+{{#each model}}
+ <div class="media">
+ 	{{#link-to 'stream' this class="pull-left plain"}}
+ 		<span class="glyphicon glyphicon-cloud-upload media-object"></span>
+ 	{{/link-to}}
+ 	<div class="media-body">
+ 		<h4 class="media-heading">{{#link-to 'stream' this class="plain"}}{{this.name}}{{/link-to}}</h4>
+ 		{{this.description}}
+ 	</div>
+ </div>
+{{/each}}
+<div class="media">
+ 	{{#link-to "streams.create" class="pull-left plain"}}<span class="glyphicon glyphicon-plus media-object"></span>{{/link-to}}
+ 	<div class="media-body">
+ 		<h4 class="media-heading">{{#link-to "streams.create" class="plain"}}Add Stream{{/link-to}}</h4>
+ 		Create a new stream.
+ 	</div>
+ </div>
+<h5>Total Streams: {{streamsCount}}</h5>
+
+{{outlet}}
+</div>

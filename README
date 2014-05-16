@@ -1,0 +1,3 @@
+<h1>VideoPipe</h1>
+<p>VideoPipe is the ember front end to the restful streaming api.</p>
+<p>It needs to be running in unison to the Streaming API.</p>
